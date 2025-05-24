@@ -21,6 +21,7 @@
             justify-content: center;
             align-items: center;
             position: relative;
+            animation: backgroundFade 10s infinite;
         }
         
         body::before {
@@ -33,9 +34,25 @@
             background-color: rgba(0, 0, 0, 0.6);
             z-index: 1;
         }
-        
+        @keyframes backgroundFade{
+            0%, 20%{
+                background-image: url('/parque.jpg');
+                opacity: 1;
+            }
+            20%, 50% {
+                background-image: url('/parque2.webp');
+                opacity: 1;
+            }
+            50%, 80% {
+                background-image: url('/parque3.jpg');
+                opacity: 1;
+            }
+            80%, 100%{
+                background-image: url('/parque.jpg');
+            }
+        }
         .login-container {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.589);
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
@@ -104,11 +121,13 @@
         }
         
         .forgot a {
-            color: #FF6B00;
+            color: #000000;
             text-decoration: none;
+            transition: color 0.4s ease;
         }
         
         .forgot a:hover {
+            color: #FF6B00;
             text-decoration: underline;
         }
         
@@ -129,22 +148,34 @@
             background-color: #E05A00;
         }
         
-        .register {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 14px;
-        }
-        
-        .register a {
-            color: #FF6B00;
+       .register a {
+            color: #000000;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .register a:hover {
+            color: #FF6B00;
+            text-decoration: underline;
         }
         
         .register a:hover {
             text-decoration: underline;
         }
-        
+          .logout-btn{
+            background-color: #ffffff00;
+            color: #000000;
+            border-color: #ffffff00;
+            border-radius: 20%;
+            padding: 4px 4px;
+            font-size: 15px;
+            transition: color 0.7s ease;
+        }
+        .logout-btn:hover{
+            color: #FF6B00;
+            text-decoration: underline;
+        }
         @media (max-width: 480px) {
             .login-container {
                 padding: 20px;
@@ -159,7 +190,7 @@
             <button class="logout-btn" >Visitante</button>
         </form>
         <div class="login-logo">
-            <img src='./aribabiba/hopi-hari.pngalt'alt="Logo Hopi Hari">
+            <img src='./aribabiba/hopi-hari.png'alt="Logo Hopi Hari">
         </div>
         <h1>Área do admin</h1>
         <form id="loginForm">
@@ -182,7 +213,7 @@
             </div>
             <button type="submit" class="login-btn">ENTRAR</button>
             <div class="register">
-                Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a>
+                Ainda não tem conta? <a href="adm_cadastro.html">Cadastre-se</a>
             </div>
         </form>
         
