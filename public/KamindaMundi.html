@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Hopi Hari</title>
+     <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
     <style>
         :root {
             --primary-color: #f97316;
             /* --secondary-color: #3b82f6; */
             --accent-color: #f97316;
-            --background-color: #f0f9ff;
+            --background-color: #e8f6ff;
             --text-color: #1e293b;
         }
 
@@ -40,10 +41,11 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
-        .header h2 {
+       .header h2 {
             margin: 10px 0 0;
-            font-size: 1.5rem;
+            font-size: 3rem;
             font-weight: normal;
+            font-family:'bebas';
         }
 
         .header-content {
@@ -141,7 +143,7 @@
             text-align: center;
             padding: 15px;
             font-size: 0.9rem;
-            margin-top: 30px;
+            margin-top: 30px; 
         }
 
         .last-update {
@@ -191,7 +193,10 @@
             background-color: white;
             color: #FF6B00;
         }
-
+         @font-face {
+            font-family:"bebas";
+            src: url(../BebasNeue-Regular.otf) format("opentype");
+        }
     </style>
 </head>
 <body>
@@ -199,8 +204,9 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src='./aribabiba/hopi-hari.png' alt="Logo Hopi Hari">
+                    <img src='./logohopihari.png' alt="Logo Hopi Hari">
                 </div>
+                <h2>Kaminda Mundi</h2>
                 <div class="user-menu">
                     <div class="user-info">
                         <div class="user-name" id="user-name">Bem-vindo(a)</div>
@@ -254,7 +260,7 @@
     </div>
 
     <div class="footer">
-        &copy; 2025 Parque HOPIhARI - Sistema de Gerenciamento de Filas
+        &copy; 2025 Parque HopiHari- Sistema de Gerenciamento de Filas
     </div>
 
     <script>

@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Hopi Hari</title>
+     <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
     <style>
         :root {
             --primary-color: #f97316;
             /* --secondary-color: #3b82f6; */
             --accent-color: #f97316;
-            --background-color: #f0f9ff;
+            --background-color: #e8f6ff;
             --text-color: #1e293b;
         }
 
@@ -42,9 +43,11 @@
 
         .header h2 {
             margin: 10px 0 0;
-            font-size: 1.5rem;
+            font-size: 3rem;
             font-weight: normal;
+            font-family:'bebas';
         }
+
 
         .header-content {
             display: flex;
@@ -191,6 +194,11 @@
             background-color: white;
             color: #FF6B00;
         }
+          @font-face {
+            font-family:"bebas";
+            src: url(../BebasNeue-Regular.otf) format("opentype");
+        }
+
 
     </style>
 </head>
@@ -199,8 +207,9 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src='./aribabiba/hopi-hari.png'alt="Logo Hopi Hari">
+                    <img src='./logohopihari.png'alt="Logo Hopi Hari">
                 </div>
+                <h2>Wild West</h2>
                 <div class="user-menu">
                     <div class="user-info">
                         <div class="user-name" id="user-name">Bem-vindo(a)</div>
@@ -223,7 +232,7 @@
             <div class="ride-card">
                 <div class="ride-image" style="background-image: url(./area2/tirolesa.jpg)"></div>
                 <div class="ride-info">
-                    <h3 class="ride-name">tirolesa</h3>
+                    <h3 class="ride-name">Tirolesa</h3>
                     <div class="ride-time">35 min</div>
                     <span class="ride-status status-busy">Muito Movimentado</span>
                 </div>
@@ -259,7 +268,7 @@
             <div class="ride-card">
                 <div class="ride-image" style="background-image: url(./area2/la_mina_el_joe_sacramento.jpg)"></div>
                 <div class="ride-info">
-                    <h3 class="ride-name">la mina el joe sacramento</h3>
+                    <h3 class="ride-name">La mina el joe sacramento</h3>
                     <div class="ride-time">40 min</div>
                     <span class="ride-status status-busy">Muito Movimentado</span>
                 </div>
@@ -268,7 +277,7 @@
             <div class="ride-card">
                 <div class="ride-image" style="background-image: url(./area2/namuskita-min\ \(1\).jpg)"></div>
                 <div class="ride-info">
-                    <h3 class="ride-name">namuskita</h3>
+                    <h3 class="ride-name">Namuskita</h3>
                     <div class="ride-time">10 min</div>
                     <span class="ride-status status-open">Normal</span>
                 </div>
@@ -286,7 +295,7 @@
             <div class="ride-card">
                 <div class="ride-image" style="background-image: url(./area2/spleshi.jpg)"></div>
                 <div class="ride-info">
-                    <h3 class="ride-name">spleshi</h3>
+                    <h3 class="ride-name">Spleshi</h3>
                     <div class="ride-time">30 min</div>
                     <span class="ride-status status-busy">Movimentado</span>
                 </div>
@@ -297,7 +306,7 @@
     </div>
 
     <div class="footer">
-        &copy; 2025 Parque HOPIhARI - Sistema de Gerenciamento de Filas
+        &copy; 2025 Parque HopiHari - Sistema de Gerenciamento de Filas
     </div>
 
     <script>
